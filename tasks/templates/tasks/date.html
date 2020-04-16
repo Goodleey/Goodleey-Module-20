@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Дата и время с кэшированием{% endblock %}
+
+{% block main_content %}
+  <h1>Дата и время с кэшированием</h1>
+  <h3>{{ dt|date:"D d M Y" }} {{dt|time:"H:i:s" }}</h3>
+{% endblock %}
